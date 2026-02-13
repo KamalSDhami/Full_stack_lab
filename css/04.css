@@ -15,3 +15,7 @@ h1:hover{
     transform: rotate(-45deg) translate(100px, 100px) scale(1.5,0.8) skew(20deg);
 
 }
+.news{
+    column-count: 3;
+    column-gap: 10px;
+}
