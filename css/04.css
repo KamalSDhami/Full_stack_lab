@@ -1,0 +1,17 @@
+h1{
+    color:yellow;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 60px;
+    box-shadow: 6px 6px 20px black;
+    transition: background-color  0.8s ease;/* what type of change , time , ease-in/ ease-out/ease-in-out/ease */
+    transition: border-radius  0.8s ease, transform 0.8s ease;
+}
+h1:hover{
+    border-radius: 10%;
+    background-color: red;
+    transform: rotate(-45deg) translate(100px, 100px) scale(1.5,0.8) skew(20deg);
+
+}

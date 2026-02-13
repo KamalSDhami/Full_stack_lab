@@ -1,0 +1,13 @@
+*{
+    background-color: blue;
+    color: yellow;
+    
+}
+h2{
+    background-color: brown;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}

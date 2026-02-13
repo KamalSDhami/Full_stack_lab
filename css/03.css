@@ -1,0 +1,41 @@
+h1{
+    color: yellow;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: -6px -6px 10px black;
+}
+h2{
+    text-shadow: 6px 6px 20px black;
+}
+a{
+    color: green;
+    text-decoration : none; /* remove underline*/
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: pink;
+}
+a:visited{
+    color:brown;
+}
+a:link{
+    color: blue;
+}
+
+h3{
+    border: 2px solid brown;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 6px 6px 10px;
+}
+h3:hover{
+    border-radius: 0%;
+    
+}
