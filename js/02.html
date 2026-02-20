@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <label for="card"> Card CC: </label>
+    <input type="number" id="card">
+    <br><br>
+    <button onclick="validate()">Submit</button>
+    <script>
+        function validate(){
+            var cc=document.getElementById("card").value;
+            var master=/^5[1-5]\d{14}$/;
+            if(master.test(cc)){
+                alert("Master Card");
+            }else{
+                alert("Invalid  Card");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.pos{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: static;
+    top: 10px;
+    left: 20px;
+}
+
+.pos2{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.pos3{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+.pos4{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 60px;
+    left: 250px;
+}
+.pos5{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: static;
+    top: 0px;
+    left: 25px;
+}
+
+.fnt{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    text-align: cneter;
+    width: 300px;
+    font-family: Georgia, "Times New Roman",;
+    cursor: url("https://cdn-icons-png.flaticon.com/512/5993/5993123.png"); /* pointer cursour, not-alloud, progress, wait, help*/
+
+}
+
