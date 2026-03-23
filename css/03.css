@@ -24,7 +24,7 @@ a:visited{
     color:brown;
 }
 a:link{
-    color: blue;
+    color: rgb(255, 0, 200);
 }
 
 h3{

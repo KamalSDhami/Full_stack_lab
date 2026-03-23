@@ -8,7 +8,7 @@
 }
 
 .pos2{
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     width: 200px;
     height: 200px;
     position: relative;
@@ -16,23 +16,23 @@
     left: 20px;
 }
 .pos3{
-    background-color: black;
+    background-color: rgb(238, 223, 15);
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 250px;
 }
 .pos4{
-    background-color: black;
+    background-color: rgb(60, 30, 196);
     width: 200px;
     height: 200px;
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: 250px;
 }
 .pos5{
-    background-color: black;
+    background-color: rgb(49, 231, 12);
     width: 200px;
     height: 200px;
     position: static;
@@ -41,7 +41,7 @@
 }
 
 .fnt{
-    background-color: black;
+    background-color: rgb(236, 174, 1);
     width: 200px;
     height: 200px;
     text-align: cneter;

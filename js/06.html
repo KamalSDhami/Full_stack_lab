@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="country">Country:</label>
+   <select name="" id="country">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="France">France</option>
+   </select>
+   <br>
+   <label for="capital">Capital</label>
+   <select id="capital">
+        <option value="New Delhi">New Delhi</option>
+        <option value="Washington">Washington</option>
+        <option value="Paris">Paris</option>
+   </select>
+   <button onclick="check()">check</button>
+   <script>
+        function check(){
+            let Country=document.getElementById("country").value;
+            let Capital=document.getElementById("capital").value;
+            let data={
+                "India":"New Delhi",
+                "USA" : "Washington",
+                "France":"Paris"
+            }
+            if(data[Country]==Capital){
+                alert("correct Answer");
+            }else{
+                alert("Incorrect Answer");
+            }
+        }
+   </script>
+</body>
+</html>
