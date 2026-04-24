@@ -7,11 +7,12 @@
 </head>
 <body>
     <h1 id="h1">Updating page</h1>
+    <h1 id="h3">Updating page</h1>
     <h1 id="h2">Updating page</h1>
     <script>
-
+            var c=1;
             function change(){
-                document.getElementById("h2").innerHTML += "<br>hello ";
+                document.getElementById("h2").innerHTML += "<br>hello "+c++;
 
             }
             setInterval(change,2000);
@@ -20,8 +21,32 @@
                 document.getElementById("h1").innerHTML = "page updated at "+ now.toLocaleTimeString();
 
             }
-            
             setInterval(time,1000);
+            var i=0;
+            function day(){
+                let arr=["Monday","Tuesday","Wednesday", "Thursday","Friday","Saturday", "Sunday"]
+                if(i>6){
+                    i=0;
+                }
+                document.getElementById("h3").innerHTML = "Day :"+ arr[i];
+                i+=1;
+            }
+            setInterval(day,1000);
+
+    </script>
+
+    <label for="Date">DOB: </label>
+    <input type="Date" id="Date">
+    <br><br>
+    <button onclick="check()">Check</button>
+    <script>
+        function check(){
+            var inp = document.getElementById("date").value;
+            var time =new Date (inp);
+            var day=time.getDay();
+            var days=["Monday","Tuesday","Wednesday", "Thursday","Friday","Saturday", "Sunday"];
+            alert("You were born on "+ days[day]);
+        }
     </script>
 </body>
 </html>

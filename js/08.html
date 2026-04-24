@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <legend>Contact Info</legend>
+        <label for="tel">Teliphone Number</label>
+        <input type="digit" name="tel" id="tel">
+        <input type="submit" onclick="check()">
+    </form>
+    <form >
+        <label for="area"> Area Code</label>
+        <input type="" disabled id="area">
+        <br>
+        <label for="number">Number:</label>
+        <input type="" disabled id="number">
+        <br>
+    </form>
+
+    <h3>a. find left-most vowel</h3>
+    <label for='inputBox'>chekc</label>
+    <input type="text" id="inputBox">
+    <input type = "submit" onclick="go()">
+    <h1 id = 'res'></h1>
+    
+    <h3>a. len</h3>
+    <label for='inputBox'>chekc</label>
+    <input type="text" id="inputBox2">
+    <input type = "submit" onclick="go()">
+    <h1 id = 'res'></h1>
+    <script>
+        function check(){//number 
+            event.preventDefault();
+            let num = document.getElementById("tel").value;
+            let parts = num.split(/[\(\)\-]/);
+            document.getElementById("area").value=parts[1];
+            document.getElementById("number").value= parts[2]+parts[3];
+        }
+        
+        function go(){//Q9
+            event.preventDefault();
+            let input = document.getElementById("inputBox").value;
+            let isNumber = /^\d+$/.test(input);
+            if(isNumber){
+                document.getElementById("res").innerHTML = "Reversed number is : "+input.split('').reverse().join('')
+            }else{
+                let str = input.toLowerCase();
+                let vowels = 'aeiou'
+                let pos = -1 ;
+                for (let i = 0; i< str.length; i++){
+                    if(vowels.includes(str[i])){
+                        pos = i;
+                        break;
+                    }
+                }if(pos!= -1 ){
+                    document.getElementById('res').innerHTML="Left most vowel at position "+ Number(pos+1);
+                }else{
+                    document.getElementById('res').innerHTML="No Vowels found"
+                }
+            }
+        }
+        function go2(){
+            let str = documnet.getElementById('value').value
+            let output = '';
+            for (let i = 0 ; i< str.length; i++){
+                let ch = str.charAt(i);
+                if (/^[a-z]$/.test(ch)){
+                    output+= ch.toUpperCase();
+                }else if(/^[A-Z]$/.test(ch)){
+                    output+=ch.toLowerCase();
+                }else output += ch;
+            }
+            document.getElementById('res2').innerHTML=output; 
+        }
+
+    </script>
+</body>
+</html>
